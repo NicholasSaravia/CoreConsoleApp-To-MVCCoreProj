@@ -15,6 +15,8 @@ namespace CoreConsoleApp_To_MVCCoreProj
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseRouting();
+
+            // this allows wwwroot files (css and js) to be found
             app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
