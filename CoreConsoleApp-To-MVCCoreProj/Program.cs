@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
 
 namespace CoreConsoleApp_To_MVCCoreProj
 {
@@ -6,7 +8,10 @@ namespace CoreConsoleApp_To_MVCCoreProj
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BuildWebHostBuilder(args).Build().Run();
         }
+
+        public static IWebHostBuilder BuildWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder().UseStartup<Startup>();
     }
 }
