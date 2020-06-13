@@ -6,4 +6,9 @@
     <RootNamespace>CoreConsoleApp_To_MVCCoreProj</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Content\" />
+    <Folder Include="wwwroot\Scripts\" />
+  </ItemGroup>
+
 </Project>
